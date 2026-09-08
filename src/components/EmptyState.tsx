@@ -10,11 +10,7 @@ export function EmptyState({ title, message }: EmptyStateProps) {
   const insets = useSafeAreaInsets();
 
   return (
-    <View style={[styles.root, { paddingTop: insets.top, paddingBottom: insets.
-      
-
-      
-     }]}>
+    <View style={[styles.root, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.body}>{message}</Text>
     </View>
